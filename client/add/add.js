@@ -5,6 +5,7 @@
 Template.add.events = {
 	'keydown input#message, submit button#button' : function (event) {
 		if (event.which == 13) { // 13 is the enter key event
+			event.preventDefault();
 			var name = document.getElementById('name');
 			var message = document.getElementById('message');
 
