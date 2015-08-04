@@ -1,0 +1,11 @@
+<template name="messages">
+	<h2>Messages</h2>
+	<ul class="list-group">
+		{{#each messages}}
+		<li class="list-group-item">
+			<strong>{{name}}:</strong>
+			{{message}} <span class="meta"> {{formatTime time}}</span>
+		</li>
+		{{/each}}
+	</ul>
+</template>
